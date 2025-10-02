@@ -1,14 +1,25 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header';
 import { UserComponent } from './user/user';
+import { DUMMY_USERS } from './dummy-users';
+import { TasksComponent } from './tasks/tasks';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, UserComponent],
+  imports: [HeaderComponent, UserComponent, TasksComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('tasksManagerApp');
+  users = DUMMY_USERS;
+  selectedUserId?: string;
+
+  get selectedUser() {
+    return this.users.find((user) => user.id === this.selectedUserId);
+    // .find() searches through an array and returns the first element that satisfies the given condition.
+  }
+
+  onSelectUser(id: string) {
+    this.selectedUserId = id;
+  }
 }

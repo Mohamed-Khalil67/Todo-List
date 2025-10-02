@@ -1,6 +1,9 @@
-<div>
-  <button (click)="onSelectUser()">
-    <img [src]="imagePath()" [alt]="selectedUser().name" />
-    <span>{{ selectedUser().name }}</span>
+<app-card>
+  <button [class.active]="selected" (click)="onSelectUser()">
+    <img [src]="imagePath" [alt]="user.name" />
+    <!-- name() is the way to set values as it using signals ( inputSignal function) -->
+    <!-- [src] is called property binding -->
+    <span>{{ user.name }}</span>
+    <!-- {{}}  called string interpolation -->
   </button>
-</div>
+</app-card>
