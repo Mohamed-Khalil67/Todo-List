@@ -1,59 +1,170 @@
-# TasksManagerApp
+# 📝 Todo List (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+A simple and elegant **Todo List** application built with **Angular** to help you organize your daily tasks efficiently.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📚 Overview
+
+This project is a practice Angular application demonstrating core Angular concepts such as **components**, **data binding**, **services**, and **event handling**.  
+Users can **add**, **edit**, **delete**, and **mark tasks as completed** through a clean user interface.
+
+---
+
+## 🚀 Features
+
+- ➕ Add new tasks
+- 🗑️ Delete existing tasks
+- ✏️ Edit task names
+- ✅ Mark tasks as completed / uncompleted
+- 💾 Persistent state (optional: via local storage or backend)
+- 📱 Responsive UI design
+- 🧩 Clean, modular component architecture
+
+---
+
+## 🛠️ Technologies Used
+
+- **Angular** (latest version)
+- **TypeScript**
+- **HTML5 / CSS3 / SCSS**
+- **Node.js & npm** (for development)
+- (Optional) **Local Storage** for saving tasks
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+
+Make sure you have these installed:
+
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- npm (comes with Node)
+- Angular CLI:
+  ```bash
+  npm install -g @angular/cli
+  ```
+
+---
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Mohamed-Khalil67/Todo-List.git
+cd Todo-List
+```
+
+---
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### Run the App (Development Server)
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open your browser and go to **[http://localhost:4200](http://localhost:4200)**.  
+The app will automatically reload when you make changes.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Build for Production
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The production-ready files will be generated in the **`dist/`** directory.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📂 Project Structure
+
+```
+Todo-List/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── models/
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   └── ...
+│   ├── assets/
+│   ├── environments/
+│   └── index.html
+├── angular.json
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+> This layout follows standard Angular project conventions.
+
+---
+
+## 🧪 Testing
+
+To run unit tests:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+To run end-to-end tests (if configured):
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 🤝 Contributing
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Contributions are welcome!  
+If you’d like to improve the project:
+
+1. Fork the repository
+2. Create a new branch
+   ```bash
+   git checkout -b feature/my-feature
+   ```
+3. Commit your changes
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to your branch
+   ```bash
+   git push origin feature/my-feature
+   ```
+5. Open a Pull Request
+
+---
+
+## 🧑‍💻 Author
+
+**Mohamed Khalil**  
+📍 Paris, France  
+🔗 GitHub: [Mohamed-Khalil67](https://github.com/Mohamed-Khalil67)
+
+---
+
+## 📝 License
+
+This project is open-source under the **MIT License**.  
+Feel free to use and modify it for your own learning or projects!
+
+---
+
+## 🌟 Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!  
+It helps others discover it and keeps motivation high 😊
